@@ -46,11 +46,17 @@ namespace AllCardsOnDeckCS
             }
 
             var firstCard = deckOfCards[0];
-            Console.WriteLine(firstCard);
+            //Console.WriteLine(firstCard);
+            //Console.WriteLine($"The first card is: {firstCard}");
+
 
             var secondCard = deckOfCards[1];
-            Console.Write(secondCard);
+            //Console.WriteLine(secondCard);
+            //Console.WriteLine($"The second card is: {secondCard}");
 
+            Console.WriteLine($"The first card is: {firstCard}, and the second card is {secondCard}");
+
+            //leaving code to try and figure out looping and generating the cards vs static list
             //var suit = new List<string>() { "Clubs", "Diamonds", "Hearts", "Spades" };
             //var rank = new List<string>() { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
 
