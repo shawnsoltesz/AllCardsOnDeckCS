@@ -35,65 +35,35 @@ namespace AllCardsOnDeckCS
 
             var numberOfCards = deck.Count;
 
-
-
-
-
-
-            //for (var rightIndex = numberOfCards - 1; rightIndex >= 1; rightIndex--)
+            for (var rightIndex = numberOfCards - 1; rightIndex >= 1; rightIndex--)
             {
 
-
-                //leftIndex = random integer that is greater than or equal to 0 and LESS than rightIndex. See the section "How do we get a random integer")
-                //var randomNumberGenerator = new Random();
-                //var leftIndex = randomNumberGenerator.Next(rightIndex);
+                var randomNumberGenerator = new Random();
+                var leftIndex = randomNumberGenerator.Next(rightIndex);
                 //Console.WriteLine(leftIndex);
 
-                //Now swap the values at rightIndex and leftIndex by doing this:
-                //leftCard = the value from deck[leftIndex]
-                //var leftCard = deckOfCards[leftIndex];
+                var leftCard = deck[leftIndex];
 
-
-                //rightCard = the value from deck[rightIndex]
-                //var rightCard = deckOfCards[rightIndex];
+                var rightCard = deck[rightIndex];
                 //Console.WriteLine(rightIndex);
 
-
-
-                //deck[rightIndex] = leftCard
-                //deckOfCards[rightIndex] = leftCard;
+                deck[rightIndex] = leftCard;
                 //Console.WriteLine(leftCard);
 
-
-                //deck[leftIndex] = rightCard
-                //deckOfCards[leftIndex] = rightCard;
+                deck[leftIndex] = rightCard;
                 //Console.WriteLine(rightCard);
 
             }
 
-            //var firstCard = deckOfCards[0];
+            var firstCard = deck[0];
             //Console.WriteLine(firstCard);
-            //git add .Console.WriteLine($"The first card is: {firstCard}");
+            //Console.WriteLine($"The first card is: {firstCard}");
 
-
-            //var secondCard = deckOfCards[1];
+            var secondCard = deck[1];
             //Console.WriteLine(secondCard);
             //Console.WriteLine($"The second card is: {secondCard}");
 
-            //Console.WriteLine($"The first card is: {firstCard}, and the second card is {secondCard}");
-
-            //leaving code to try and figure out looping and generating the cards vs static list
-            //var suit = new List<string>() { "Clubs", "Diamonds", "Hearts", "Spades" };
-            //var rank = new List<string>() { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
-
-            //var deckOfCards = new List<string>() { $"{suit} of {rank}" };
-
-            //Console.WriteLine(deckOfCards);
-
-
-
-
-
+            Console.WriteLine($"The first card is: {firstCard}, and the second card is {secondCard}");
         }
     }
 }
