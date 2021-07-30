@@ -17,9 +17,26 @@ namespace AllCardsOnDeckCS
 
             var suits = new List<string>() { "Hearts", "Spades", "Clubs", "Diamonds", };
 
-            var rank = new List<string>() { "Ace", "2", "2", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", };
+            var ranks = new List<string>() { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", };
 
             var deck = new List<string>();
+
+            foreach (var suit in suits)
+            {
+
+                foreach (var rank in ranks)
+                {
+                    var card = $"{rank} of {suit}";
+
+                    deck.Add(card);
+
+                }
+            }
+
+            var numberOfCards = deck.Count;
+
+
+
 
 
 
